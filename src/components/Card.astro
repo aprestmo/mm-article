@@ -1,0 +1,40 @@
+---
+interface Props {
+  src: string
+  text: string
+}
+
+const { src, text } = Astro.props as Props
+---
+
+<div>
+  <picture>
+    <img src={`${src}-2-3.jpg`} alt="" />
+  </picture>
+</div>
+
+<div>
+  <p>{text}</p>
+</div>
+
+<style>
+  img {
+    block-size: 100%;
+    inset: 0;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  div:last-child {
+    block-size: 100vh;
+    border: 2px solid red;
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+
+  p {
+    background: tomato;
+    margin-inline: auto;
+  }
+</style>

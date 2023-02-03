@@ -1,15 +1,51 @@
 ---
+import { Icon } from 'astro-icon'
+import '../styles/main.css'
+import Card from '../components/Card.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="nb-NO">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>POC: MM Article</title>
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <Icon name="dn" height="25" />
+      </a>
+    </header>
+
+    <main class="cards">
+      <Card src="02" text="Emilie Stordalen venter sitt første barn." />
+      <Card
+        src="03"
+        text="Byrådsleder i Oslo Raymond Johansen ble ønsket varm velkommen av viseadministrerende direktør i NHO, Anniken Hauglie."
+      />
+      <Card
+        src="04"
+        text="Her hilser Stoltenberg på NHO-direktør Gjermund Løyning."
+      />
+      <Card
+        src="05"
+        text="Næringsminister Jan Christian Vestre hadde glemt adgangskortet sitt i jakken og måtte ta en kjapp løpetur tilbake til garderoben."
+      />
+      <Card
+        src="06"
+        text="Linda Helleland ble tatt i mot av NHO-president Svein Tore Holsether og viseadministrerende direktør i NHO Anniken Hauglie."
+      />
+      <Card src="07" text="Oljefondssjef Nicolai Tangen." />
+      <Card src="08" text="Konsernsjef i Schibsted Kristin Skogen Lund." />
+      <Card src="09" text="Utenriksminister Anniken Huitfeld." />
+      <Card
+        src="10"
+        text="Hydro-sjef Hilde Merete Aasheim var blant gjestene."
+      />
+      <Card src="11" text="Idrettspresident Berit Kjøll." />
+      <Card src="12" text="Samferdselsminister Jon-Ivar Nygård." />
+    </main>
+  </body>
 </html>

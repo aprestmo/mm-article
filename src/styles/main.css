@@ -1,0 +1,29 @@
+@layer resets, base;
+
+@import url('resets.css') layer(resets);
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: system-ui;
+  }
+
+  header {
+    opacity: 1;
+    padding: 2rem;
+    position: fixed;
+    transition: opacity 360ms;
+    z-index: 1000;
+  }
+
+  header a {
+    color: inherit;
+  }
+
+  main {
+    display: flex;
+  }
+}

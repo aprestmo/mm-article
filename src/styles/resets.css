@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-inline-size: 100%;
+}
